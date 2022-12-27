@@ -1,0 +1,454 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 3000px;
+    font-style: italic;
+}
+.header-parent{
+    width: 100%;
+    height: 55px;
+    background-color:rgb(8, 5, 5);
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+    z-index: 2;
+}
+.header-logo{  
+    width: 110px;
+    height: 55px;
+    margin-left: 70px;
+    float: left;
+}
+ul{
+    list-style-type:none ;
+    float: right;
+    margin-right: 50px;
+}
+.header-li{
+    display: inline-block;
+    margin-right: 45px ;
+    margin-top: 18px;
+}
+.header-li a{
+    color: white;
+    text-decoration: none;
+}
+.header-li:hover a{
+    text-decoration:underline;
+    color: rgb(15, 209, 164);
+}
+.home{
+    height: 100vh;
+    background-image: url(../images/home\ bg.jpg);
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+}
+.home-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7)
+}
+.home-content{
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+}
+.home-title{
+    font-size: 50px;
+    color: rgb(15, 209, 164);
+    text-transform: uppercase;
+}
+.home-par{
+    color: white;
+    letter-spacing: 1px;
+    margin: 20px 0px;
+}
+.home-btn{
+    width: 150px;
+    padding: 14px 0px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.online-bt{
+    background-color:  rgb(15, 209, 164) ;
+    margin-left: 11px;
+}
+.home-btn:hover{
+    opacity: 0.7;
+}
+.welcome-contaner{
+    width: 80%;
+    margin: auto;
+}
+.welcome-content{
+    margin: 100px 0px ;
+    overflow: auto;
+}
+.welcome-item{
+    height: 200px;
+    width: 30%;
+    float: left;
+    text-align: center;
+    padding: 18px 0px;
+    line-height: 28px;
+    border: 1px solid black;
+    border-radius: 9%;
+    color: rgb(0, 0, 0);
+    position: relative;
+    background-color: rgb(245, 244, 244);
+}
+.Box{
+    margin: 0px 4%;
+    line-height: 40px;    
+}
+.Kick{
+    line-height: 40px;
+}
+.welcome-item a{
+    text-decoration: none;
+    color:  rgb(15, 209, 164) ;
+    font-size: 22px;
+}
+.welcome-item i{
+   font-size: 25px;
+   color: rgb(0, 0, 0) ;
+}
+.welcome-item h2{
+    font-size: 25px;
+    font-weight: 900;
+ }
+ .welcome-item p{
+    font-size: 13px;
+    font-weight: 50;
+    opacity: 0.8;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+ }
+ .welcome-item:after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgb(68, 68, 68) ;
+    opacity: 0;
+    border-radius: 9%;
+ }
+ .welcome-item:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    transition: 0.5s;
+ }
+ .welcome-item:hover h2{
+    color: rgb(31, 236, 188) ;
+    transition: 0.5s;
+    opacity: 1;
+ }
+ .welcome-item:hover a{
+    color: rgb(43, 209, 170) ;
+ }    
+ .line{
+    display: block;
+    width: 62px;
+    height: 4px;
+    background-color: rgb(15, 209, 164);
+    margin: 6px auto 70px auto;
+ }
+ .welcome-titleclasses{
+    text-align: center;
+    font-size: 35px;
+    color: rgb(59, 93, 93);
+    font-weight: 900;
+ }
+ .welcome-title{
+    margin: 100px auto;
+    width: 500px;
+    height: 30px;
+ }
+ .features-layout{
+    height: 1000px;
+    background-image: url(../images/pexels-wallace-chuck-12075684.jpg);
+    background-size: cover;
+    background-position: center;
+ }
+ .features-container{
+    width: 80%;
+    margin: auto;
+ }
+ .features-parent{
+    overflow: auto;
+ }
+.features-item{
+    float: left;
+    width: 30%;
+    text-align: center;
+    margin-top: 50px;
+}
+.khab , .mikee{
+    margin: 0px 5%;
+    margin-top: 50px;
+}
+.features-img{
+    position: relative;
+    transition: all 3s;
+}
+.features-overlay{
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20%;
+    line-height: 25px;
+    color: white;
+    background-color: rgba(0,0,0, 0.5);
+    visibility: hidden;
+}
+.Cut, .mikee, .coleman{
+    margin-top: 60px;
+}
+
+.features-item:hover .features-overlay  {
+    visibility: visible;
+}
+.icole{
+    color: rgb(15, 44, 209);
+    font-size: 40px;
+    letter-spacing: 15px;
+}
+.feat-item-name{
+    font-family: cursive;
+font-size: 33px;    
+}
+.feat-item-content{
+    line-height: 20px;
+}
+.features-line{
+    display: block;
+    width: 62px;
+    height: 4px;
+    background-color: goldenrod;
+    margin: 6px auto 70px auto;
+ } 
+.features-address{
+        text-align: center;
+        font-size: 35px;
+        color: white;
+        font-weight: 900;
+        padding-top: 100px;
+        font-style: italic;    
+}
+.offer-container{
+    width: 80%;
+    margin: auto;
+}
+.offer-contant{
+    overflow: auto;
+    position: relative;
+}
+.offer-item{
+    float: left;
+    width: 31%;
+    height: 250px;
+    border: 1px solid black;
+    margin: 40px 1%;
+    position: relative;
+}
+.offeri{
+    position: absolute;
+    font-size: 40px;
+    color:goldenrod;
+    top: 18px;
+    left: 15px;
+}
+.offer-name{
+    text-transform: capitalize;
+    padding: 20px 0px 0px 100px;
+}
+.offer-disc{
+text-transform: capitalize;
+ line-height: 1.7;
+ color: darkgrey;
+ font-size: 16px;
+ font-weight: 20;
+ padding: 25px 0px 0px 100px;
+}
+.offer-item:after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgb(107, 107, 107);
+    opacity: 0;
+}
+.offer-item:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    transition: 0.5s;
+ }
+ .offer-line{
+    display: block;
+    width: 62px;
+    height: 4px;
+    background-color: goldenrod;
+    margin: 6px auto 70px auto;
+ } 
+.offer-address{
+    text-align: center;
+    font-size: 35px;
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+    padding-top: 100px;
+    font-style: italic;    
+}
+.team-layout{
+    background-image: url(../images/backte.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.team-content {
+    overflow: auto;
+}
+
+.team-item {
+    float: left;
+    width: 28%;
+    background-color: rgb(203, 201, 204);
+    padding: 19px  16px ;
+    text-align: center;
+    position: relative;
+}
+.Boxing {
+    margin: 0px  3%;
+}
+.team-img {
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+
+.team-img img {
+    width: 100%;
+}
+
+.team-overlay {
+    position: absolute;
+    top:0;
+    right:0;
+    bottom: 0;
+    left: 0;
+    background-color:  rgba(24, 25, 29, 0.5) ;
+    visibility: hidden;
+    opacity: 0 ;
+ 
+}
+
+.team-item:hover  .team-overlay  {
+    visibility: visible;
+    opacity: 1 ;
+}
+.team-overlay  a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(68, 176, 238);
+    color: #fff;
+    margin-left: auto ;
+}
+.team-overlay a i {
+    line-height: 40px ;
+}
+.team-info-title {
+    text-transform: uppercase ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.team-info-text {
+    text-transform: capitalize;
+    color:rgb(17, 180, 142)
+}
+.team-item:after {
+    content: "";
+    position: absolute;
+
+    width: 0 ;
+    height: 0 ; 
+
+    top: 0 ;
+    right: 0;
+
+    background-color: rgb(46, 43, 43);
+    opacity:0.9 ;
+}
+.team-item:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity:0.6 ;
+    transition: 2s ;    
+}
+
+.team-line{
+    display: block;
+    width: 62px;
+    height: 4px;
+    background-color: rgb(15, 209, 164);
+    margin: 6px auto 70px auto;
+ } 
+.team-address{
+    text-align: center;
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    padding-top: 100px;
+    font-style: italic;    
+}
+.ima-fo{
+    width: 210px;
+    height: 130px;
+}
+
+.footer{
+    background-color: #4c4d52;
+    text-align: center;
+    height: 180px;
+    padding: 155px 0;
+}
+.icons{
+    margin: 15px 0px;
+}
+.icons a i{
+    font-size: 40px;
+    color: rgb(15, 109, 210);
+}
+.footer p{
+    color:#999;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.fa:hover{
+opacity: 0.5;
+}
